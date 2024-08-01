@@ -1,3 +1,3 @@
 const drawLine = require('./drawLine')
 
-drawLine(12, 'Hello world')
+drawLine(8, 'Hello world')

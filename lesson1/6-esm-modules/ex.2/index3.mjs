@@ -1,3 +1,3 @@
-import helloWorld from './index3-source.mjs'
+import helloWorldAny from './index3-source.mjs'
 
-helloWorld()
+helloWorldAny()
