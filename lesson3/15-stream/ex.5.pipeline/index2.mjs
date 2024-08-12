@@ -4,9 +4,7 @@ import { createReadStream, createWriteStream } from 'fs'
 import { createGzip } from 'zlib'
 
 const readStream = createReadStream('source.txt')
-
 const gzipStream = createGzip()
-
 const writeStream = createWriteStream('output.txt.gz')
 
 try {

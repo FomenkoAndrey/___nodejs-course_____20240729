@@ -3,7 +3,6 @@ import fs from 'fs'
 
 async function main() {
   const source = fs.createReadStream('source.txt')
-
   const destination = fs.createWriteStream('output.txt')
 
   try {

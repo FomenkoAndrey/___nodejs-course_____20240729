@@ -2,7 +2,7 @@ import http from 'http'
 import fs from 'fs'
 
 const server = http.createServer((req, res) => {
-  const filePath = './index.html1'
+  const filePath = './index.html'
 
   if (req.url === '/' && req.method === 'GET') {
     const readStream = fs.createReadStream(filePath)
@@ -24,7 +24,6 @@ const server = http.createServer((req, res) => {
         console.error('Error reading file:', err)
         res.statusCode = 500
         res.end('Internal server error')
-
         return
       }
 

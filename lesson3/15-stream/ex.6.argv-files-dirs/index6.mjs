@@ -7,7 +7,6 @@ const fileName = 'dump'
 const resultFileName = 'dump-copy'
 
 const readStream = fs.createReadStream(path.join(folder, fileName))
-
 const writeStream = fs.createWriteStream(path.join(folder, resultFileName))
 
 async function runPipeline() {

@@ -9,7 +9,6 @@ const inputStream = new Duplex({
   read(size) {
     if (this.currentCharCode > 90) { // Z is 90
       this.push(null)
-
       return
     }
     this.push(String.fromCharCode(this.currentCharCode++))
